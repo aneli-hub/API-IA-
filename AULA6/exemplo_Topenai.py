@@ -2,7 +2,7 @@
 from openai import OpenAI # biblioteca do chatgpt
 
 # inicializar o cliente 
-cliente = OpenAI(api_key="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")
+cliente = OpenAI(api_key="coloque a chave")
 
 # https://abre.ai/chaveopenai (link da chave de API, fornecida pelo professor)
 # OpenAi dashboard -> conta de vocês (para solicitar nossas proprias chaves)
