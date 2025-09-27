@@ -16,7 +16,7 @@ def helloworld():
   })
 @app.route('/')
 def home():
-        return render_template('index.html')
+        return render_template('index.html', registros=registros)
 # iniciar o servidor
 
 if __name__ == '__main__':

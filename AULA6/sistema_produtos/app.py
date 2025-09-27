@@ -42,6 +42,17 @@ def index():
     registros = ler_registros()
     return render_template("index.html", registros=registros)
 
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    if request.method == "Post":
+        usuario = request.form["usario"]
+        senha = request.form["senha"]
+        if usuario == "admin" and senha == "123":
+            return redirect("/")
+        else:
+            return render_template("login.html")
+    return render_template("login.html")
+
 if __name__ == "__main__":
     inicializar_csv()
     app.run(debug=True)
