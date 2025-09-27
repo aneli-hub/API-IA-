@@ -1,0 +1,122 @@
+/* Importar fonte retrô */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Estilo geral com imagem de fundo */
+body {
+    background-color: #87CEEB;
+    background-image: url('https://i.pinimg.com/736x/ea/d8/21/ead82121d6217cc7fc4c4fc93f5b917f.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Título principal */
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.2em;
+    text-align: center;
+    color: #e60000;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+
+
+/* Card de personagem-estilo doc cartoes */
+.personagem-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+    max-width: 800px;
+    height: 250px; /* altura fixa para todos os cards */
+    margin: 40px auto;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    transition: transform 0.3s ease;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    line-height: 1.6;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    overflow: auto;
+    flex: 1;
+    min-width: 200px;
+    overflow: auto;
+}
+
+/* efeito ao passar o mouse-hover*/
+.personagem-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* define tamanho da imagem e arredondamento */
+.personagem-item img {
+    width: 180px;
+    height: auto;
+    max-height: 100%;
+    border-radius: 10px;
+    flex-shrink: 100px;
+
+}
+
+/* Titulo e paragrafo dentro do card */
+.personagem-item h2 {
+    margin: 0 0 10px 0;
+    font-size: 25px;
+    justify-content: center;
+    
+}
+
+.personagem-item p {
+    margin: 0;
+    word-break: break-word;
+    font-size: 10px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+}
+
+/* Cores por personagem */
+#mario { background-color: rgba(255,0,0,0.75); }
+#luigi { background-color: rgba(0,204,0,0.75); }
+#peach { background-color: rgba(255,105,180,0.75); }
+#yoshi { background-color: rgba(0,247,255,0.75); }
+#toad { background-color: rgba(128,6,6,0.75); }
+#bowser { background-color: rgba(49,8,8,0.75); }
+#donkey-kong { background-color: rgba(130,81,31,0.75); }
+#cranky-kong { background-color: rgba(102,51,0,0.75); }
+
+/* Responsivo para telas menores */
+@media (max-width: 600px) {
+    .personagem-item {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    .personagem-item img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .personagem-item .texto {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 0.9em;
+    }
+}
