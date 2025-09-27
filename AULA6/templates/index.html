@@ -8,64 +8,44 @@
     <link rel="stylesheet" href="../static/style.css">
 </head>
 <body>
-    <main>
-        <section class="personagem">
-            <h1>Personagens Principais</h1> 
 
-            <div class="personagem-item" id="mario">
-                <img src="https://conteudo.imguol.com.br/c/parceiros/85/2023/02/22/filme-de-super-mario-bros-chega-em-2023-1677085599966_v2_1x1.jpg" alt="Mario" />
-                <h2>Mario</h2>
-                <p>é o personagem principal da série e o herói do Reino dos Cogumelos. Ele é um encanador corajoso e sempre está pronto para salvar a Princesa Peach e derrotar Bowser.</p>
-              
-            </div>
+  <div class="form-container">
+    <h1>Cadastro</h1>
+    <form>
+      <label for="nome">Nome completo:</label>
+      <input type="text" id="nome" name="nome" required>
 
-            <div class="personagem-item" id="luigi">
-                <img src="https://pbs.twimg.com/media/GK5sSYIXAAIJxyQ.jpg" alt="Luigi" />
-                <h2>Luigi</h2>
-                <p>é o irmão mais novo de Mario. Embora seja mais tímido, ele também é corajoso e sempre ajuda Mario em suas aventuras.</p>
-                </div>       
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
 
-                       <div class="personagem-item" id="peach"> 
-                <img src="https://ca-times.brightspotcdn.com/dims4/default/c267468/2147483647/strip/true/crop/2667x1500+103+0/resize/1200x675!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F09%2Fab%2F8539df1644feb5f10ca14a98a90f%2F2530-t2-00063.jpg" alt="peach" />
-                <h2>peach</h2>
-                <p>também conhecida como Princesa Cogumelo. Ela é a governante do Reino do Cogumelo e frequentemente retratada como a donzela em perigo</p>
-                </div>
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required>
 
-                        <div class="personagem-item" id="yoshi">
-                <img src="https://cdn.pixabay.com/photo/2018/01/22/14/34/yoshi-3099057_1280.jpg" alt="yoshi" />
-                <h2>yoshi</h2>
-                <p>é um dinossauro verde com uma língua comprida e pegajosa, capaz de comer inimigos e objetos, suas maiores habilidades é o salto triplo, habilidade de engolir inimigos e cuspir ovos.</p>
-                </div>
+      <label for="data-nascimento">Data de nascimento:</label>
+      <input type="date" id="data-nascimento" name="data-nascimento" required>
 
-                       <div class="personagem-item" id="toad">
-                <img src="https://i.pinimg.com/736x/87/29/29/87292965cb4c7c12bed34da6da2fe6b6.jpg" alt="toad" />
-                <h2>toad</h2>
-                <p>é inabalável em sua dedicação à Princesa Peach e ao Reino do Cogumelo. Apesar de sua pequena estatura, ele enfrenta ameaças e faz o possível para proteger aqueles com quem se importa</p>
-                </div>
+      <label>Gênero:</label>
+      <div class="gender-options">
+        <label><input type="radio" name="genero" value="masculino" required> Masculino</label>
+        <label><input type="radio" name="genero" value="feminino"> Feminino</label>
+        <label><input type="radio" name="genero" value="outro"> Outro</label>
+      </div>
 
+      <label for="estado">Estado:</label>
+      <select id="estado" name="estado" required>
+        <option value="">Selecione</option>
+        <option value="SP">São Paulo</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="BA">Bahia</option>
+        <option value="RS">Rio Grande do Sul</option>
+      </select>
+      <div class="checkbox">
+        <label><input type="checkbox" name="novidades"> Quero receber novidades por e-mail</label>
+      </div>
 
-                         <div class="personagem-item" id="bowser">
-                <img src="https://tm.ibxk.com.br/2023/05/02/02234351262002.jpg" alt="Bowser" />
-                <h2>Bowser</h2>
-                <p>é o principal antagonista da série Super Mario, conhecido por sua ambição de conquistar o Reino do Cogumelo e sequestrar a Princesa Peach. Ele é o rei dos Koopas, uma raça de criaturas reptilianas, e constantemente entra em conflito com Mario e seus amigos,Ele é conhecido por seu sopro de fogo, força física impressionante, resistência e habilidades mágicas, incluindo transformações e manipulação</p>
-            </div>
+      <button type="submit">Cadastrar</button>
+    </form>
+  </div>
 
-
-                       <div class="personagem-item" id="donkey-kong">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhx9ERb6EAApDLlXgXznxnaLhZLAf_85iyvkbP16eTz7ddrManLYqqFIwlD4QrILxfE90eogFJiUZh7UWABYvj1_rTGTNzCIrDBjj90YNgpSXhyGAh1NeDkvxoGSdGTX1iuzLwGyhskES6tFml6qHtXciJhP0ioc_jrLxy-dUFZ-ZbwFVUO28DrLJka/s1072/dk-filme-capa.jpg" alt="Donkey Kong" />
-                <h2> Donkey Kong</h2>
-                <p>conhecido por sua força e paixão por bananas faz proteção de sua ilha e tesouros de bananas de inimigos, Em termos de habilidades, Donkey Kong é um lutador poderoso, capaz de dar socos, rolar, pular e arremessar objetos</p>
-                </div>
- 
-                    <div class="personagem-item" id="cranky-kong">
-                <img src="https://i.pinimg.com/736x/06/cf/3d/06cf3d00f96324bae0822006a9d63bcb.jpg" alt="Cranky Kong" />
-                <h2>Cranky Kong</h2>
-                <p>é um personagem icônico da série Donkey Kong, conhecido por ser o pai de Donkey Kong Jr. e o avô rabugento de Donkey Kong,  ele é o líder dos Kongs, tem a habilidade de pular em sua bengala, o que lhe permite atravessar superfícies pontiagudas, como arbustos espinhoso</p>
-                </div>
-                
-
-            
-        </section>
-    </main>
 </body>
-</html>
